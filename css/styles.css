@@ -1,0 +1,50 @@
+:root {
+  --page-bg-color: #f9f9fd;
+  --primary-text-color: #212121;
+  --card-set-gap: 20px;
+  --card-shadow: 0px 2px 1px -1px rgba(0 0 0 0.2),
+    0px 1px 1px 0px rgba(0 0 0 0.14), 0px 1px 3px 0px rgba(0 0 0 0.12);
+}
+
+body {
+  background-color: var(--page-bg-color);
+  color: var(--primary-text-color);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* CONTAINER */
+.container {
+  width: 960px;
+
+  min-height: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ccc;
+}
+
+.card-set {
+  outline: 2px dotted red;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set > .item {
+  outline: 2px dashed teal;
+  flex-basis: calc(100% / 3);
+}
