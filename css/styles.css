@@ -10,6 +10,8 @@ body {
   background-color: var(--page-bg-color);
   color: var(--primary-text-color);
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -22,29 +24,45 @@ p {
   margin: 0;
 }
 
+.wrapper {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1100px;
+  background-color: orchid;
+  outline: 1px solid orange;
+}
+
 /* CONTAINER */
 .container {
   width: 960px;
 
   min-height: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: var(--card-set-gap);
+  padding-right: var(--card-set-gap);
   margin-left: auto;
   margin-right: auto;
   background-color: #ccc;
 }
 
 .card-set {
-  outline: 2px dotted red;
+  /* outline: 2px dotted red; */
   padding: 0;
   margin: 0;
   list-style: none;
 
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .card-set > .item {
-  outline: 2px dashed teal;
-  flex-basis: calc(100% / 3);
+  /* outline: 2px dashed teal; */
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 }
