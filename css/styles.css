@@ -79,6 +79,8 @@ img {
 
 .card {
   box-shadow: var(--card-shadow);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-thumb {
