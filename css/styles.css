@@ -79,7 +79,7 @@ img {
 
 .card {
   box-shadow: var(--card-shadow);
-  border-radius: 10px;
+  border-radius: calc(var(--card-set-gap) / 4);
   overflow: hidden;
 }
 
